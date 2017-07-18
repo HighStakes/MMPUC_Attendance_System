@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HIbernate"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Mysql JDBC Driver"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ServletAPI"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Web App Libraries"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
