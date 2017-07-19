@@ -21,7 +21,7 @@ public class LoginDAO {
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		Transaction transaction = session.beginTransaction();
-
+		boolean isUserAvailable = false;
 		try {
 			List<Login> users = session.createQuery("FROM Login").list();
 			for (Login user : users) {
@@ -29,9 +29,7 @@ public class LoginDAO {
 				System.out.println("User Name: " + user.getUserName());
 				System.out.println("Password: " + user.getPassword());
 				if(user.getUserName().equals(username) && user.getPassword().equals(password)){
-					return true;
-				}else{
-					return false;
+					isUserAvailable = true;
 				}
 			}
 			
@@ -41,7 +39,7 @@ public class LoginDAO {
 			transaction.commit();
 			session.close();
 		}
-		return false;
+		return isUserAvailable;
 		 
 	}
 

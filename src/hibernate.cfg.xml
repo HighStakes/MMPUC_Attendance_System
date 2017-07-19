@@ -6,10 +6,16 @@
 	<session-factory>
 		<!-- Database connection settings -->
 		<!-- <property name="hibernate.connection.datasource">java:/comp/env/jdbc/iAttend</property> -->
-		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://localhost:3306/iAttend</property>
-		<property name="connection.username">root</property>
-		<property name="connection.password">dream@87</property>
+	    <!-- <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  -->
+	    <!-- <property name="connection.url">jdbc:mysql://localhost:3306/iAttend</property> -->
+	    
+	    
+		<!-- <property name="connection.url">"jdbc:google:mysql://mmpuc-ams:asia-northeast1:iattend-new/iAttend</property> -->
+		
+		<property name="connection.driver_class">com.mysql.jdbc.GoogleDriver</property> 
+		<property name="connection.url">jdbc:google:mysql://mmpuc-ams:asia-northeast1:iattend-new/iAttend?user=root</property>
+	    <!-- <property name="connection.username">root</property> 
+		<property name="connection.password">dream@87</property>  -->
 		<property name="connection.autocommit">true</property>
 		<!-- JDBC connection pool (use the built-in) -->
 		<property name="connection.pool_size">1</property>

@@ -11,5 +11,11 @@
             <property name="datanucleus.NontransactionalWrite" value="true"/>
             <property name="datanucleus.ConnectionURL" value="appengine"/>
         </properties>
+        <properties>
+            <INSTANCE_CONNECTION_NAME>mmpuc-ams:asia-northeast1:iattend-new</INSTANCE_CONNECTION_NAME>
+    		<user>root</user>
+    		<password>dream@87</password>
+   		    <database>iAttend</database>
+        </properties>
     </persistence-unit>
 </persistence>

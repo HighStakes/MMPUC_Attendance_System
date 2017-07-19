@@ -3,7 +3,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="com.jwt.hibernate.bean.Login" table="Login">
+	<class name="mac.Login" table="Login">
 		 
 		<id name="id" type="integer" column="Id">
 			<generator class="increment" />
